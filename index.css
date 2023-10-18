@@ -1,0 +1,241 @@
+@font-face {
+    font-family: myFont;
+    src: url(Rellita.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    width: 600px;
+    margin: 0 auto;
+    font-family: myFont;
+
+} 
+
+.hero{
+    background-image: url(images/burner.png);
+    max-width: 600px;
+    padding: 46px;
+    color: #fff;
+    font-size: larger;
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+h1 {
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+h3{
+    margin: 0;
+    padding-top: 5px;
+}
+.pops-container{
+    position: relative;
+    max-width: 600px;
+    padding: 60px 45px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.payment {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    margin: 0 auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 111px 26px rgba(0,0,0,0.49);
+    padding-top: 47px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    border-radius: 3.5px;
+    
+}
+
+.payment > h3 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 46px;
+}
+
+.payment > input {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 23px;
+    border-radius: 3.5px;
+    border: 1px solid #757575;
+    color: #757575;
+    font-family: myFont;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 16px 26px;
+}
+
+.payment > button {
+    width: 90%;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: solid #D2D2D2 1px;
+    padding-bottom: 5px;
+}
+
+.menu-start{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-img{
+    width: 80px;
+    height: 89px
+}
+
+.menu-mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-left: 16px;
+}
+
+.add-menu{
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.add-menu:hover{
+    background-color: #D2D2D2;
+}
+
+.payment-popup{
+    display: none;
+}
+
+#remove {
+    cursor: pointer;
+}
+
+.order-container {
+    display: none;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.order > h3 {
+    font-family: myFont;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.order-list{
+    width: 100%;
+    margin-top: 64px;
+}
+
+.order-list-items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.order-list-items-item > span:nth-child(1) {
+    font-family: myFont;
+    font-style: normal;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.order-list-items-item > span:nth-child(2) {
+    color: #BBB;
+    font-family: myFont;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.order-list-items-item > span:nth-child(2):hover {
+    font-weight: bold;
+    color: red;
+}
+
+.total-price {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #393333;
+    margin-top: 31px;
+    padding-top: 14px;
+    padding-bottom: 53px;
+}
+
+.total-price > span {
+    color: #0E0E0E;
+    font-family: myFont;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+button {
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    background: #16DB99;
+    /* padding: 18px 175px 18px 194px; */
+    padding: 18px;
+    color: #fff;
+    font-family: myFont;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.order-placed {
+    display: none;
+    width: 80%;
+    padding: 55px;
+    border-radius: 3px;
+    background: #ECFDF5;
+    margin: 0 auto;
+    color: #065F46;
+    font-family: myFont;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 45px;
+}

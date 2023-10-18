@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="index.css">
+    <title>Patience's Palate</title>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-container">
+            <h1>Patience's Palate</h1>
+            <h3>The best burgers and pizzas in town.</h3>
+        </div>
+    </header>
+    <div class="pops-container" id="main">
+        <div class="main">
+            <!-- List of menu to choose from goes her -->
+        </div>
+
+        <!-- pop-up for payments -->
+
+        <div class="payment" id="payment">
+                <h3>Enter card details</h3>
+                <input 
+                    type="text"
+                    id="name" 
+                    placeholder="Enter your name" 
+                    required>
+                <input 
+                    type="text"
+                    id="cardNumber" 
+                    placeholder="Enter card number" 
+                    maxlength="16"
+                    pattern="[0-9]{13, 16}"
+                    autocomplete="cc-number"
+                    inputmode="numeric"
+                    required>
+                <input 
+                    type="text" 
+                    id="cvvNumber"
+                    maxlength="3"
+                    placeholder="Enter CVV" 
+                    required>
+                <button type="submit"id="pay-btn">Pay</button>
+            </div>
+            
+
+            <!-- Your order items goes here -->
+
+            <div class="order-container">
+                <div class="order">
+                    <h3>Your order</h3>
+                    <div class="order-list">
+
+                    </div>
+                    <div class="total-price">
+                        <span>Total price:</span>
+                        <span id="total"></span>
+                    </div>
+                    <button id="order-btn">Complete Order</button>
+                </div>
+            </div>
+
+            <!-- Thank you pop-up after payment is done -->
+
+            <div class="order-placed">
+                Thanks, <span id="customer"></span>! Your order is on it's way!
+            </div>
+        </div>
+</body>
+<script src="index.js" type="module"></script>
+</html>
+
+
